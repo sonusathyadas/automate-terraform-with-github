@@ -9,20 +9,12 @@ terraform {
       version = "3.0.1"
     }
   }
-#   required_version = ">= 1.1.0"
 
-#   cloud {
-#     organization = "bytestream"
-
-#     workspaces {
-#       name = "gh-actions-demo"
-#     }
-#   }
-  #    backend "s3" {
-  #     bucket = "tf-state-05"
-  #     key    = "tfdemo.state"
-  #     region = "ap-south-1"
-  #   }
+     backend "s3" {
+      bucket = "tf-state-05"
+      key    = "tfdemo.state"
+      region = "ap-south-1"
+    }
 
 }
 
