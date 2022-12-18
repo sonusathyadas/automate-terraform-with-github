@@ -18,11 +18,11 @@ terraform {
       name = "gh-actions-demo"
     }
   }
-   backend "s3" {
-    bucket = "tf-state-05"
-    key    = "tfdemo.state"
-    region = "ap-south-1"
-  }
+#    backend "s3" {
+#     bucket = "tf-state-05"
+#     key    = "tfdemo.state"
+#     region = "ap-south-1"
+#   }
 
 }
 
