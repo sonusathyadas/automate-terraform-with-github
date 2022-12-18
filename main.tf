@@ -11,13 +11,13 @@ terraform {
   }
 #   required_version = ">= 1.1.0"
 
-#   cloud {
-#     organization = "bytestream"
+  cloud {
+    organization = "bytestream"
 
-#     workspaces {
-#       name = "gh-actions-demo"
-#     }
-#   }
+    workspaces {
+      name = "gh-actions-demo"
+    }
+  }
   #    backend "s3" {
   #     bucket = "tf-state-05"
   #     key    = "tfdemo.state"
