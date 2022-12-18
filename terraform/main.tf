@@ -2,11 +2,15 @@ terraform {
   required_providers {
     aws = {
       source  = "hashicorp/aws"
-      Version = "~>3.27"
+      version = "~> 4.0"
     }
   }
 
-  required_version = ">=0.14.9"
+  # Configure the AWS Provider
+  provider "aws" {
+    region = "ap-south-1"
+  }
+
   backend "s3" {
     bucket = "tf-state-05"
     key    = "tfdemo.state"
