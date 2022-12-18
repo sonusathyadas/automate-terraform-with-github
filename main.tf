@@ -2,7 +2,7 @@ terraform {
   required_providers {
     aws = {
       source  = "hashicorp/aws"
-      version = "3.26.0"
+      version = "= 3.74.2"
     }
     random = {
       source  = "hashicorp/random"
@@ -18,16 +18,16 @@ terraform {
       name = "gh-actions-demo"
     }
   }
-#    backend "s3" {
-#     bucket = "tf-state-05"
-#     key    = "tfdemo.state"
-#     region = "ap-south-1"
-#   }
+  #    backend "s3" {
+  #     bucket = "tf-state-05"
+  #     key    = "tfdemo.state"
+  #     region = "ap-south-1"
+  #   }
 
 }
 
 provider "aws" {
-  region  = "ap-south-1"
+  region = "ap-south-1"
 }
 
 resource "random_pet" "sg" {}
