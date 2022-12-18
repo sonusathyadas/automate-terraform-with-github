@@ -12,7 +12,7 @@ terraform {
 
      backend "s3" {
       bucket = "tf-state-05"
-      key    = "tfdemo.state"
+      key    = "terraform.state"
       region = "ap-south-1"
     }
 
